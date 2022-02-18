@@ -1,0 +1,134 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2636
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fnil\fcharset0 Menlo-Bold;}
+{\colortbl;\red255\green255\blue255;\red121\green213\blue255;\red25\green25\blue25;\red234\green89\blue101;
+\red234\green255\blue255;\red254\green193\blue89;\red184\green230\blue123;}
+{\*\expandedcolortbl;;\cssrgb\c53725\c86667\c100000;\cssrgb\c12941\c12941\c12941;\cssrgb\c94118\c44314\c47059;
+\cssrgb\c93333\c100000\c100000;\cssrgb\c100000\c79608\c41961;\cssrgb\c76471\c90980\c55294;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs24 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 # 
+\f1\b **\cf4 \strokec4 Project Dark Matter: Houbolt Liquid Rocket Simulation\cf2 \strokec2 **
+\f0\b0 \cf5 \cb1 \strokec5 \
+\
+\cf2 \cb3 \strokec2 ##### \cf6 \strokec6 General Notes:\cf5 \cb1 \strokec5 \
+\cf2 \cb3 \strokec2 -\cf5 \strokec5  Please remember to always git pull before you start to edit any files\cb1 \
+\cf2 \cb3 \strokec2 -\cf5 \strokec5  Please write down detailed description/messages when you commit. This makes it easier to trace code changes.\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf5 \cb3   \cf2 \strokec2 -\cf5 \strokec5  You can find issues \cf2 \strokec2 [\cf7 \strokec7 here\cf2 \strokec2 ](\cf4 \ul \ulc4 \strokec4 https://GitHub.com/emersonvn/houbolt_simulation/issues\cf2 \ulnone \strokec2 )\cf5 \strokec5 .\cb1 \
+\
+\
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 \strokec2 ## 
+\f1\b **\cf4 \strokec4 Getting Started\cf2 \strokec2 **
+\f0\b0 \cf5 \cb1 \strokec5 \
+\cf2 \cb3 \strokec2 0.\cf5 \strokec5  Sign up for a \cf2 \strokec2 [\cf7 \strokec7 GitHub account\cf2 \strokec2 ](\cf4 \ul \ulc4 \strokec4 https://GitHub.com/join?source=header-home\cf2 \ulnone \strokec2 )\cf5 \cb1 \strokec5 \
+\cf2 \cb3 \strokec2 1.\cf5 \strokec5  Send either @emersonvn, @max or @momo your GitHub username so they can add you to the GitHub repository\cb1 \
+\cf2 \cb3 \strokec2 2.\cf5 \strokec5  Setup your MATLAB installation\cb1 \
+\cf2 \cb3 \strokec2 3.\cf5 \strokec5  Download and install \cf2 \strokec2 [\cf7 \strokec7 GitHub Desktop\cf2 \strokec2 ](\cf4 \ul \ulc4 \strokec4 https://desktop.GitHub.com/\cf2 \ulnone \strokec2 )\cf5 \strokec5  and \cf2 \strokec2 [\cf7 \strokec7 Atom\cf2 \strokec2 ](\cf4 \ul \ulc4 \strokec4 https://atom.io/\cf2 \ulnone \strokec2 )\cf5 \cb1 \strokec5 \
+\cf2 \cb3 \strokec2 4.\cf5 \strokec5  Log into both GitHub Desktop and Atom using your GitHub account!\cb1 \
+\cf2 \cb3 \strokec2 5.\cf5 \strokec5  In Atom: "Settings" -> "Install" -> search for "gitkraken-glo". Install and log in using your GitHub username.\cb1 \
+\cf2 \cb3 \strokec2 6.\cf5 \strokec5  Clone this repository to your local PC from inside GitHub Desktop by following \cf2 \strokec2 [\cf7 \strokec7 these instructions\cf2 \strokec2 ](\cf4 \ul \ulc4 \strokec4 https://help.GitHub.com/en/desktop/contributing-to-projects/cloning-a-repository-from-GitHub-to-GitHub-desktop\cf2 \ulnone \strokec2 )\cf5 \cb1 \strokec5 \
+\
+\
+\cf2 \cb3 \strokec2 ## 
+\f1\b **\cf4 \strokec4 Programs we will use\cf2 \strokec2 **
+\f0\b0 \cf5 \cb1 \strokec5 \
+\cf2 \cb3 \strokec2 1.\cf5 \strokec5  For visual code management (GitHub):\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf5 \cb3     \cf2 \strokec2 -\cf5 \strokec5  \cf2 \strokec2 `\cf7 \strokec7 GitHub Desktop\cf2 \strokec2 `\cf5 \strokec5  (preferred) or\cb1 \
+\cb3     \cf2 \strokec2 -\cf5 \strokec5  \cf2 \strokec2 `\cf7 \strokec7 Gitkraken\cf2 \strokec2 `\cf5 \cb1 \strokec5 \
+\
+\
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 \strokec2 2.\cf5 \strokec5  For issue tracking:\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf5 \cb3     \cf2 \strokec2 -\cf5 \strokec5  \cf2 \strokec2 `\cf7 \strokec7 Glo Board\cf2 \strokec2 `\cf5 \cb1 \strokec5 \
+\cb3       \cf2 \strokec2 -\cf5 \strokec5  Can be accessed in any of the following ways:\cb1 \
+\cb3         \cf2 \strokec2 -\cf5 \strokec5  Inside Atom as an addon (search for gitkraken-glo inside Atom)\cb1 \
+\cb3         \cf2 \strokec2 -\cf5 \strokec5  Inside \cf2 \strokec2 [\cf7 \strokec7 Gitkraken\cf2 \strokec2 ](\cf4 \ul \ulc4 \strokec4 https://www.gitkraken.com/\cf2 \ulnone \strokec2 )\cf5 \cb1 \strokec5 \
+\cb3         \cf2 \strokec2 -\cf5 \strokec5  On the web \cf2 \strokec2 [\cf7 \strokec7 here\cf2 \strokec2 ](\cf4 \ul \ulc4 \strokec4 https://app.gitkraken.com/glo\cf2 \ulnone \strokec2 )\cf5 \cb1 \strokec5 \
+\
+\
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 \strokec2 3.\cf5 \strokec5  For writing code:\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf5 \cb3     \cf2 \strokec2 -\cf5 \strokec5  \cf2 \strokec2 `\cf7 \strokec7 Atom\cf2 \strokec2 `\cf5 \strokec5  (preferred) or\cb1 \
+\cb3     \cf2 \strokec2 -\cf5 \strokec5  Text editor of your choice\cb1 \
+\
+\
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 \strokec2 4.\cf5 \strokec5  For running code:\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf5 \cb3    \cf2 \strokec2 -\cf5 \strokec5  MATLAB R2017a or later\cb1 \
+\
+\
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 \strokec2 5.\cf5 \strokec5  (Optional) For high level view of variable location and code structure:\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf5 \cb3     \cf2 \strokec2 -\cf5 \strokec5  \cf2 \strokec2 `\cf7 \strokec7 SUAVE 2.0\cf2 \strokec2 `\cf5 \strokec5  and \cf2 \strokec2 `\cf7 \strokec7 UML\cf2 \strokec2 `\cf5 \cb1 \strokec5 \
+\
+\
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 \strokec2 ## 
+\f1\b **\cf4 \strokec4 Guide to GitHub Workflow\cf2 \strokec2 **
+\f0\b0 \cf5 \cb1 \strokec5 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf5 \cb3 In Atom or GitHub Desktop, you would:\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 \strokec2 1.\cf5 \strokec5  Begin your session by clicking "Fetch", this will allow you to see if there are any new changes in the remote git repository\cb1 \
+\cf2 \cb3 \strokec2 2.\cf5 \strokec5  If there are changes then click "Pull", in order to pull the newest changes into your local copy.\cb1 \
+\cf2 \cb3 \strokec2 2.\cf5 \strokec5  Make your changes and save the files.\cb1 \
+\cf2 \cb3 \strokec2 3.\cf5 \strokec5  You will see any files you have changed under "Unstaged Changes"\cb1 \
+\cf2 \cb3 \strokec2 4.\cf5 \strokec5  "Stage" files you want to push to the remote git repository\cb1 \
+\cf2 \cb3 \strokec2 5.\cf5 \strokec5  Write a detailed commit message of the changes you made\cb1 \
+\cf2 \cb3 \strokec2 6.\cf5 \strokec5  Click, "Commit to master"\cb1 \
+\cf2 \cb3 \strokec2 7.\cf5 \strokec5  Click, "Push"\cb1 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf5 \cb3 The basic commands are as follows,\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 \strokec2 -\cf5 \strokec5  pull\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf5 \cb3   \cf2 \strokec2 -\cf5 \strokec5  Merges all the changes present in the remote repository to the local working directory.\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 \strokec2 -\cf5 \strokec5  push\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf5 \cb3   \cf2 \strokec2 -\cf5 \strokec5  Send local commits to the master branch of the remote repository.\cb1 \
+\
+\cb3 If you are new to using git or GitHub, in order to simplify your life, I recommend you use GitHub Desktop in conjunction with Atom, in order to visually use git operations. For more information look either \cf2 \strokec2 [\cf7 \strokec7 here\cf2 \strokec2 ](\cf4 \ul \ulc4 \strokec4 https://help.github.com/en/desktop/contributing-to-projects\cf2 \ulnone \strokec2 )\cf5 \strokec5  or under the guides folder.\cb1 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 \strokec2 ![\cf7 \strokec7 Staging\cf2 \strokec2 ](\cf5 \ul \ulc5 \strokec5 https://web.archive.org/web/20130519130755im_/http://learn.GitHub.com/images/staging.png\cf2 \ulnone \strokec2 )\cf5 \cb1 \strokec5 \
+\
+\
+\cf2 \cb3 \strokec2 ## 
+\f1\b **\cf4 \strokec4 Guide to Coding style\cf2 \strokec2 **
+\f0\b0 \cf5 \cb1 \strokec5 \
+\pard\pardeftab720\partightenfactor0
+\cf5 \cb3 Class Structure from @momo is here:\cb1 \
+\cb3 https://docs.google.com/document/d/1D-SZpB-IdstTddzVF1u2uNzn9qynOw0fEKdauNEANys/edit\cb1 \
+\
+\cb3 The coding style is taken directly from \cf2 \strokec2 [\cf7 \strokec7 here\cf2 \strokec2 ](\cf4 \ul \ulc4 \strokec4 http://suave.stanford.edu/documentation/code_style.html\cf2 \ulnone \strokec2 )\cf5 \strokec5 .\cb1 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 \strokec2 #### 
+\f1\b **\cf4 \strokec4 Naming Convention\cf2 \strokec2 **
+\f0\b0 \cf5 \cb1 \strokec5 \
+\cf2 \cb3 \strokec2 ##### \cf6 \strokec6 In terms of typography:\cf5 \cb1 \strokec5 \
+\
+\cf2 \cb3 \strokec2 -\cf5 \strokec5  any_variable_name - lower case with underscore. This includes working variables and instantiated objects.\cb1 \
+\cf2 \cb3 \strokec2 -\cf5 \strokec5  field_name - lower case with underscore Any field of an object should be lower case.\cb1 \
+\cf2 \cb3 \strokec2 -\cf5 \strokec5  function_name - lower case with underscore\cb1 \
+\cf2 \cb3 \strokec2 -\cf5 \strokec5  Class_Type - upper case with underscore. The underscores are chosen here to permit the inclusion of acronyms if needed and to maintain symmetry with field name styling.\cb1 \
+\cf2 \cb3 \strokec2 -\cf5 \strokec5  Package_Name - upper case with underscore. For example folders within the SUAVE package.\cb1 \
+\
+\cf2 \cb3 \strokec2 ##### \cf6 \strokec6 In terms of naming:\cf5 \cb1 \strokec5 \
+\cf2 \cb3 \strokec2 -\cf5 \strokec5  Chunk similar field types under a containing field\cb1 \
+\cf2 \cb3 \strokec2 -\cf5 \strokec5  Bias names towards being specific\cb1 \
+\cf2 \cb3 \strokec2 -\cf5 \strokec5  Write out field name verbosely, but try to keep short\cb1 \
+\
+}

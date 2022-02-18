@@ -1,0 +1,23 @@
+Combustion     (Emma)
+  - Uses CEA
+  - BAD interface
+  - New to redesign interface to pull needed params from classes
+  
+CG Calculator  (Zach)
+  - Calculate the CG of propellants + tanks to putput to OpenRocket
+  - Pull needed params from classes
+  - https://www.lucidchart.com/invitations/accept/43be7a38-020e-48a7-a54b-1d9cd69a7f1e
+
+2 DOF Flight Dynamics (Mohamed)
+  - We have existing code
+  - Adapt to class structure
+
+Pressuriation  (Mohamed, Emerson)
+Pressurization  (Mohamed, Emerson)
+  - Adapt existing code to class structure
+  
+Smaller Tasks: (Mohamed, Emerson)
+  - Injector 
+  - Code for reading mass budget
+  - Code for writing output files
+  - Code for reading input files
